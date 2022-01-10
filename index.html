@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>R2R instructions analysis</title>
-<!-- 2022-01-09 Sun 22:54 -->
+<!-- 2022-01-10 Mon 10:13 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Org-mode">
@@ -192,32 +192,6 @@ $(function() {
     $('.bs-docs-sidebar').affix();
 });
 </script>
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  displayAlign: "center",
-  displayIndent: "2em",
-  messageStyle: "none",
-  "HTML-CSS": {
-    scale: 100,
-    styles: {
-      ".MathJax_Display": {
-        "font-size": "100%"
-      }
-    }
-  },
-  "SVG": {
-    scale: 100,
-    styles: {
-      ".MathJax_SVG_Display": {
-        "font-size": "100%",
-        "margin-left": "-2.281em"
-      }
-    }
-  }
-});
-</script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 </head>
 <body>
 <div id="content" class="container">
@@ -233,7 +207,7 @@ MathJax.Hub.Config({
 <li><a href="#sec-3-3">3.3. Adverbs</a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4. Recommended vocabulary</a>
+<li><a href="#sec-4">4. Core vocabulary</a>
 <ul class="nav">
 <li><a href="#sec-4-1">4.1. Verbs</a></li>
 <li><a href="#sec-4-2">4.2. Prepositions</a></li>
@@ -241,7 +215,7 @@ MathJax.Hub.Config({
 <li><a href="#sec-4-4">4.4. Nouns</a></li>
 </ul>
 </li>
-<li><a href="#sec-5">5. Sentence frames</a>
+<li><a href="#sec-5">5. Instruction frames</a>
 <ul class="nav">
 <li><a href="#sec-5-1">5.1. Go</a></li>
 <li><a href="#sec-5-2">5.2. Walk</a></li>
@@ -746,7 +720,7 @@ verb_data
 <div class="org-src-container">
 
 <pre class="src src-jupyter"><span style="color: #DFAF8F;">fig</span> = plt.figure(figsize=(16, 12))
-plt.plot([x <span style="color: #F0DFAF; font-weight: bold;">for</span> x, _ <span style="color: #F0DFAF; font-weight: bold;">in</span> verb_data], [y <span style="color: #F0DFAF; font-weight: bold;">for</span> _, y <span style="color: #F0DFAF; font-weight: bold;">in</span> verb_data])
+plt.bar([x <span style="color: #F0DFAF; font-weight: bold;">for</span> x, _ <span style="color: #F0DFAF; font-weight: bold;">in</span> verb_data], [y <span style="color: #F0DFAF; font-weight: bold;">for</span> _, y <span style="color: #F0DFAF; font-weight: bold;">in</span> verb_data])
 plt.xticks(rotation=<span style="color: #CC9393;">'vertical'</span>, fontsize=20)
 plt.yticks(fontsize=20)
 plt.show;
@@ -755,7 +729,7 @@ plt.show;
 
 
 <figure>
-<p><img src="image/935690e9aa52620de23ef84e02238f3df60d727e.png" class="img-responsive" alt="935690e9aa52620de23ef84e02238f3df60d727e.png">
+<p><img src="image/0107df0f63bea3a6d287267668566eec3ae097e5.png" class="img-responsive" alt="0107df0f63bea3a6d287267668566eec3ae097e5.png">
 </p>
 </figure>
 </div>
@@ -934,7 +908,7 @@ adp_data
 <div class="org-src-container">
 
 <pre class="src src-jupyter"><span style="color: #DFAF8F;">fig</span> = plt.figure(figsize=(16, 12))
-plt.plot([x <span style="color: #F0DFAF; font-weight: bold;">for</span> x, _ <span style="color: #F0DFAF; font-weight: bold;">in</span> adp_data], [y <span style="color: #F0DFAF; font-weight: bold;">for</span> _, y <span style="color: #F0DFAF; font-weight: bold;">in</span> adp_data])
+plt.bar([x <span style="color: #F0DFAF; font-weight: bold;">for</span> x, _ <span style="color: #F0DFAF; font-weight: bold;">in</span> adp_data], [y <span style="color: #F0DFAF; font-weight: bold;">for</span> _, y <span style="color: #F0DFAF; font-weight: bold;">in</span> adp_data])
 plt.xticks(rotation=<span style="color: #CC9393;">'vertical'</span>, fontsize=20)
 plt.yticks(fontsize=20)
 plt.show;
@@ -943,11 +917,12 @@ plt.show;
 
 
 <figure>
-<p><img src="image/9b2331d55305c870c7e2c6e0d4bfa462623fbeeb.png" class="img-responsive" alt="9b2331d55305c870c7e2c6e0d4bfa462623fbeeb.png">
+<p><img src="image/86e0bfef04aa4984d4f45cb6d9416dbcd887987b.png" class="img-responsive" alt="86e0bfef04aa4984d4f45cb6d9416dbcd887987b.png">
 </p>
 </figure>
 </div>
 </div>
+
 
 <div id="outline-container-sec-3-3" class="outline-3">
 <h3 id="sec-3-3"><span class="section-number-3">3.3</span> Adverbs</h3>
@@ -1123,7 +1098,7 @@ adv_data
 <div class="org-src-container">
 
 <pre class="src src-jupyter"><span style="color: #DFAF8F;">fig</span> = plt.figure(figsize=(16, 12))
-plt.plot([x <span style="color: #F0DFAF; font-weight: bold;">for</span> x, _ <span style="color: #F0DFAF; font-weight: bold;">in</span> adv_data], [y <span style="color: #F0DFAF; font-weight: bold;">for</span> _, y <span style="color: #F0DFAF; font-weight: bold;">in</span> adv_data])
+plt.bar([x <span style="color: #F0DFAF; font-weight: bold;">for</span> x, _ <span style="color: #F0DFAF; font-weight: bold;">in</span> adv_data], [y <span style="color: #F0DFAF; font-weight: bold;">for</span> _, y <span style="color: #F0DFAF; font-weight: bold;">in</span> adv_data])
 plt.xticks(rotation=<span style="color: #CC9393;">'vertical'</span>, fontsize=20)
 plt.yticks(fontsize=20)
 plt.show;
@@ -1132,7 +1107,7 @@ plt.show;
 
 
 <figure>
-<p><img src="image/22b7d9a420860b04bac6953befdfb492967efb4b.png" class="img-responsive" alt="22b7d9a420860b04bac6953befdfb492967efb4b.png">
+<p><img src="image/a2d12de1085a86bd1fc04c6a29265bf7d49c60c0.png" class="img-responsive" alt="a2d12de1085a86bd1fc04c6a29265bf7d49c60c0.png">
 </p>
 </figure>
 </div>
@@ -1140,7 +1115,7 @@ plt.show;
 </div>
 
 <div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Recommended vocabulary</h2>
+<h2 id="sec-4"><span class="section-number-2">4</span> Core vocabulary</h2>
 <div class="outline-text-2" id="text-4">
 </div><div id="outline-container-sec-4-1" class="outline-3">
 <h3 id="sec-4-1"><span class="section-number-3">4.1</span> Verbs</h3>
@@ -1171,27 +1146,22 @@ If we aim at a richer set, we can add
 <h3 id="sec-4-2"><span class="section-number-3">4.2</span> Prepositions</h3>
 <div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
-<li>of
-</li>
 <li>to
 </li>
-<li>on
-</li>
-<li>into
-</li>
-<li>in
+<li>towards
 </li>
 <li>through
 </li>
 <li>past
 </li>
-<li>towards
-</li>
 <li>around
+</li>
+<li>into (?)
 </li>
 </ul>
 </div>
 </div>
+
 <div id="outline-container-sec-4-3" class="outline-3">
 <h3 id="sec-4-3"><span class="section-number-3">4.3</span> Adverbs</h3>
 <div class="outline-text-3" id="text-4-3">
@@ -1211,15 +1181,53 @@ If we aim at a richer set, we can add
 </ul>
 </div>
 </div>
+
 <div id="outline-container-sec-4-4" class="outline-3">
-<h3 id="sec-4-4"><span class="section-number-3">4.4</span> <span class="label label-primary TODO">TODO</span> Nouns</h3>
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Nouns</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>All 41 Matterport categories, mapped to WN synsets:
+<a href="https://github.com/niessner/Matterport/blob/master/metadata/mpcat40.tsv">https://github.com/niessner/Matterport/blob/master/metadata/mpcat40.tsv</a>
+</li>
+<li>Of these, 21 are used for the navigation tasks in ObjectNav
+(<a href="#citeproc_bib_item_2">Batra et al. 2020</a>), which says they excluded architectural elements,
+and "visually ill defined" objects. The remaining list:
+<ul class="org-ul">
+<li>chair, table, picture, cabinet, cushion, sofa, bed,
+chest_of_drawers, plant, sink, toilet, stool, towel,
+tv_monitor, shower, bathtub, counter, fireplace, gym_equipment,
+seating, clothes.
+</li>
+</ul>
+</li>
+<li>From the 21 the following are <i>not</i> so suitable as landmark:
+<ul class="org-ul">
+<li>cushion, towel, clothes
+</li>
+</ul>
+</li>
+<li>Potential additional ones from the 41:
+<ul class="org-ul">
+<li>wall
+</li>
+<li>door (!)
+</li>
+<li>curtain 
+</li>
+<li>shelving 
+</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
+</div>
+
 <div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> Sentence frames</h2>
+<h2 id="sec-5"><span class="section-number-2">5</span> Instruction frames</h2>
 <div class="outline-text-2" id="text-5">
 <p>
-Let's try to look at the most typical verb phrases.
+Let's try to look at the most typical verb phrase structures.
 </p>
 
 <div class="org-src-container">
@@ -1232,7 +1240,7 @@ Let's try to look at the most typical verb phrases.
             result.append(<span style="color: #CC9393;">"NOUN"</span>)
         <span style="color: #F0DFAF; font-weight: bold;">elif</span> pos == <span style="color: #CC9393;">"ADJ"</span>:
             result.append(<span style="color: #CC9393;">"ADJ"</span>)
-        <span style="color: #F0DFAF; font-weight: bold;">elif</span> pos != <span style="color: #CC9393;">"PUNCT"</span>:
+        <span style="color: #F0DFAF; font-weight: bold;">elif</span> pos <span style="color: #F0DFAF; font-weight: bold;">in</span> [<span style="color: #CC9393;">"DET"</span>, <span style="color: #CC9393;">"ADV"</span>, <span style="color: #CC9393;">"ADP"</span>, <span style="color: #CC9393;">"PRON"</span>, <span style="color: #CC9393;">"VERB"</span>]:
             result.append(token.lemma_)
     <span style="color: #F0DFAF; font-weight: bold;">return</span> result
 </pre>
@@ -1273,47 +1281,72 @@ Let's try to look at the most typical verb phrases.
 <tbody>
 <tr>
 <td class="text-left">(go down the NOUN)</td>
-<td class="text-right">355</td>
+<td class="text-right">396</td>
 </tr>
 
 <tr>
 <td class="text-left">(go up the NOUN)</td>
-<td class="text-right">228</td>
-</tr>
-
-<tr>
-<td class="text-left">(go into the NOUN)</td>
-<td class="text-right">186</td>
-</tr>
-
-<tr>
-<td class="text-left">(go)</td>
-<td class="text-right">160</td>
+<td class="text-right">253</td>
 </tr>
 
 <tr>
 <td class="text-left">(go to the NOUN)</td>
-<td class="text-right">119</td>
+<td class="text-right">221</td>
+</tr>
+
+<tr>
+<td class="text-left">(go into the NOUN)</td>
+<td class="text-right">207</td>
+</tr>
+
+<tr>
+<td class="text-left">(go)</td>
+<td class="text-right">163</td>
 </tr>
 
 <tr>
 <td class="text-left">(go straight)</td>
-<td class="text-right">97</td>
+<td class="text-right">104</td>
 </tr>
 
 <tr>
 <td class="text-left">(go through the NOUN)</td>
-<td class="text-right">71</td>
-</tr>
-
-<tr>
-<td class="text-left">(go to the NOUN \r\n)</td>
-<td class="text-right">62</td>
+<td class="text-right">80</td>
 </tr>
 
 <tr>
 <td class="text-left">(go outside)</td>
+<td class="text-right">66</td>
+</tr>
+
+<tr>
+<td class="text-left">(go up NOUN)</td>
 <td class="text-right">52</td>
+</tr>
+
+<tr>
+<td class="text-left">(go to the ADJ NOUN)</td>
+<td class="text-right">49</td>
+</tr>
+
+<tr>
+<td class="text-left">(go to the NOUN NOUN)</td>
+<td class="text-right">45</td>
+</tr>
+
+<tr>
+<td class="text-left">(go past the NOUN)</td>
+<td class="text-right">44</td>
+</tr>
+
+<tr>
+<td class="text-left">(go inside)</td>
+<td class="text-right">43</td>
+</tr>
+
+<tr>
+<td class="text-left">(go down NOUN)</td>
+<td class="text-right">39</td>
 </tr>
 
 <tr>
@@ -1322,22 +1355,12 @@ Let's try to look at the most typical verb phrases.
 </tr>
 
 <tr>
-<td class="text-left">(go past the NOUN)</td>
-<td class="text-right">37</td>
-</tr>
-
-<tr>
-<td class="text-left">(go inside)</td>
-<td class="text-right">37</td>
-</tr>
-
-<tr>
-<td class="text-left">(go to the NOUN NOUN)</td>
-<td class="text-right">37</td>
-</tr>
-
-<tr>
 <td class="text-left">(go right)</td>
+<td class="text-right">35</td>
+</tr>
+
+<tr>
+<td class="text-left">(go through the ADJ NOUN)</td>
 <td class="text-right">34</td>
 </tr>
 
@@ -1347,13 +1370,8 @@ Let's try to look at the most typical verb phrases.
 </tr>
 
 <tr>
-<td class="text-left">(go through the ADJ NOUN)</td>
-<td class="text-right">31</td>
-</tr>
-
-<tr>
-<td class="text-left">(go to the NOUN  )</td>
-<td class="text-right">31</td>
+<td class="text-left">(go straight into the NOUN)</td>
+<td class="text-right">30</td>
 </tr>
 
 <tr>
@@ -1362,28 +1380,13 @@ Let's try to look at the most typical verb phrases.
 </tr>
 
 <tr>
-<td class="text-left">(go straight into the NOUN)</td>
-<td class="text-right">29</td>
-</tr>
-
-<tr>
-<td class="text-left">(go to the ADJ NOUN)</td>
-<td class="text-right">27</td>
-</tr>
-
-<tr>
 <td class="text-left">(go into the ADJ NOUN)</td>
-<td class="text-right">25</td>
+<td class="text-right">26</td>
 </tr>
 
 <tr>
 <td class="text-left">(go down)</td>
-<td class="text-right">23</td>
-</tr>
-
-<tr>
-<td class="text-left">(to go down the NOUN)</td>
-<td class="text-right">23</td>
+<td class="text-right">24</td>
 </tr>
 
 <tr>
@@ -1392,18 +1395,18 @@ Let's try to look at the most typical verb phrases.
 </tr>
 
 <tr>
-<td class="text-left">(go to the ADJ NOUN \r\n)</td>
-<td class="text-right">22</td>
+<td class="text-left">(go past the NOUN NOUN)</td>
+<td class="text-right">21</td>
 </tr>
 
 <tr>
-<td class="text-left">(go up NOUN)</td>
-<td class="text-right">20</td>
-</tr>
-
-<tr>
-<td class="text-left">(to go into the NOUN)</td>
+<td class="text-left">(go NOUN)</td>
 <td class="text-right">19</td>
+</tr>
+
+<tr>
+<td class="text-left">(go toward the NOUN)</td>
+<td class="text-right">18</td>
 </tr>
 
 <tr>
@@ -1412,13 +1415,18 @@ Let's try to look at the most typical verb phrases.
 </tr>
 
 <tr>
-<td class="text-left">(go toward the NOUN)</td>
+<td class="text-left">(go the NOUN)</td>
 <td class="text-right">16</td>
 </tr>
 
 <tr>
-<td class="text-left">(go NOUN)</td>
-<td class="text-right">16</td>
+<td class="text-left">(go up the ADJ NOUN)</td>
+<td class="text-right">15</td>
+</tr>
+
+<tr>
+<td class="text-left">(go through the NOUN NOUN)</td>
+<td class="text-right">14</td>
 </tr>
 </tbody>
 </table>
@@ -1946,13 +1954,17 @@ Let's try to look at the most typical verb phrases.
 <h2 id="sec-6"><span class="section-number-2">6</span> References</h2>
 <div class="outline-text-2" id="text-6">
 <p>
-<a id="citeproc_bib_item_1" name="citeproc_bib_item_1"></a>Anderson, Peter, Qi Wu, Damien Teney, Jake Bruce, Mark Johnson, Niko Sünderhauf, Ian Reid, Stephen Gould, and Anton Van Den Hengel. 2018. “Vision-and-Language Navigation: Interpreting Visually-Grounded Navigation Instructions in Real Environments.” In <i>Proceedings of the Ieee Conference on Computer Vision and Pattern Recognition</i>, 3674–83. <a href="https://doi.org/10.1109/CVPR.2018.00387">https://doi.org/10.1109/CVPR.2018.00387</a>.</p>
+<a id="citeproc_bib_item_1" name="citeproc_bib_item_1"></a>Anderson, Peter, Qi Wu, Damien Teney, Jake Bruce, Mark Johnson, Niko Sünderhauf, Ian Reid, Stephen Gould, and Anton Van Den Hengel. 2018. “Vision-and-Language Navigation: Interpreting Visually-Grounded Navigation Instructions in Real Environments.” In <i>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</i>, 3674–83. <a href="https://doi.org/10.1109/CVPR.2018.00387">https://doi.org/10.1109/CVPR.2018.00387</a>.
+</p>
+
+<p>
+<a id="citeproc_bib_item_2" name="citeproc_bib_item_2"></a>Batra, Dhruv, Aaron Gokaslan, Aniruddha Kembhavi, Oleksandr Maksymets, Roozbeh Mottaghi, Manolis Savva, Alexander Toshev, and Erik Wijmans. 2020. “Objectnav Revisited: On Evaluation of Embodied Agents Navigating to Objects.” <i>Arxiv Preprint Arxiv:2006.13171</i>.</p>
 </div>
 </div>
 </div></div></div>
 <footer id="postamble" class="">
 <div><p class="author">Author: András Simonyi</p>
-<p class="date">Created: 2022-01-09 Sun 22:54</p>
+<p class="date">Created: 2022-01-10 Mon 10:13</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 28.0.50 (<a href="http://orgmode.org">Org-mode</a> N/A-fixup)</p>
 </div>
 </footer>
